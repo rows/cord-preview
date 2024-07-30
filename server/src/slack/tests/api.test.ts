@@ -53,6 +53,7 @@ describe('fetchSlackChannelList', () => {
             };
           } else {
             fail('Caller made up a cursor?');
+            return;
           }
         }),
       },
@@ -125,6 +126,7 @@ describe('fetchSlackChannelList', () => {
             };
           } else {
             fail('Caller made up a cursor?');
+            return;
           }
         }),
       },
