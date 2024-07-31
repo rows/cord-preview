@@ -1,8 +1,12 @@
 // This is for important URLs to all kinds of services
 
 export const TOP_SERVER_HOST = process.env.TOP_SERVER_HOST!;
-export const APP_SERVER_HOST = process.env.APP_SERVER_HOST!;
-export const API_SERVER_HOST = process.env.API_SERVER_HOST!;
+export const APP_SERVER_HOST =
+  // @ts-expect-error
+  globalThis.CORD_APP_SERVER_HOST_OVERRIDE ?? process.env.APP_SERVER_HOST!;
+export const API_SERVER_HOST =
+  // @ts-expect-error
+  globalThis.CORD_API_SERVER_HOST_OVERRIDE ?? process.env.API_SERVER_HOST!;
 export const API_SERVER_HOST_PRODUCTION =
   process.env.API_SERVER_HOST_PRODUCTION!;
 export const ADMIN_SERVER_HOST = process.env.ADMIN_SERVER_HOST!;
