@@ -18,8 +18,8 @@ export const DOCS_SERVER_HOST = process.env.DOCS_SERVER_HOST!;
 export const SLACK_APP_REDIRECT_HOST = process.env.SLACK_APP_REDIRECT_HOST;
 
 export const TOP_ORIGIN = 'https://' + process.env.TOP_SERVER_HOST;
-export const APP_ORIGIN = 'https://' + process.env.APP_SERVER_HOST;
-export const API_ORIGIN = 'https://' + process.env.API_SERVER_HOST;
+export const APP_ORIGIN = 'https://' + APP_SERVER_HOST;
+export const API_ORIGIN = 'https://' + API_SERVER_HOST;
 export const ADMIN_ORIGIN = 'https://' + process.env.ADMIN_SERVER_HOST;
 export const CONSOLE_ORIGIN = 'https://' + process.env.CONSOLE_SERVER_HOST;
 export const MARKETING_ORIGIN = 'https://' + process.env.MARKETING_SERVER_HOST;
